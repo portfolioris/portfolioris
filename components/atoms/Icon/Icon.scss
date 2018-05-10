@@ -1,0 +1,94 @@
+/*  =========================================================================
+    atoms.icon
+    Icon system based on svg sprites
+    ========================================================================= */
+
+/*  Imports
+    ========================================================================= */
+
+@import 'sass/engine';
+
+
+
+/*  Variables
+    ========================================================================= */
+
+$icon-base-size: 16px !default;
+
+
+
+/*  Functions/Mixins
+    ========================================================================= */
+
+
+
+/*  Module
+    ========================================================================= */
+
+.c-icon {
+  display: block;
+  @include blocss-rem(width, $icon-base-size);
+  @include blocss-rem(height, $icon-base-size);
+  fill: currentColor;
+}
+
+
+
+/*  Modifiers
+    ========================================================================= */
+
+.c-icon--inherit {
+  width: 1em;
+  height: 1em;
+}
+
+
+
+.c-icon--inline {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+
+.c-icon--flip {
+  transform: scaleX(-1);
+}
+
+
+
+/**
+ * Sizes
+ */
+
+.c-icon--alpha {
+  @include blocss-rem(width, 75px);
+  @include blocss-rem(height, 75px);
+}
+
+.c-icon--beta {
+  @include blocss-rem(width, $beta);
+  @include blocss-rem(height, $beta);
+}
+
+.c-icon--gamma {
+  @include blocss-rem(width, $gamma);
+  @include blocss-rem(height, $gamma);
+}
+
+.c-icon--delta {
+  @include blocss-rem(width, $delta);
+  @include blocss-rem(height, $delta);
+}
+
+.c-icon--epsilon {
+  @include blocss-rem(width, $epsilon);
+  @include blocss-rem(height, $epsilon);
+}
+
+// zeta omitted
+
+.c-icon--milli {
+  @include blocss-rem(width, $milli);
+  @include blocss-rem(height, $milli);
+}

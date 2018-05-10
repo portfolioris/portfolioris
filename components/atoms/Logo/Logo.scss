@@ -1,0 +1,45 @@
+/*  =========================================================================
+    Logo
+    ========================================================================= */
+
+@import "sass/engine";
+
+.c-logo__img {
+  width: $blocss-space * 1.5;
+  height: $blocss-space * 1.5;
+  display: block;
+  outline: none;
+
+  #square {
+    fill: $black;
+    transition: fill $base-transition-duration-short linear;
+  }
+}
+
+
+
+.c-logo {
+  display: block;
+  margin-right: $blocss-space-small;
+
+  &:hover,
+  &:active,
+  &:focus {
+    .c-logo__img {
+      #square {
+        fill: $green;
+      }
+    }
+  }
+}
+
+
+/*  Responsive
+    ========================================================================= */
+
+@include blocss-media-query(lap) {
+  .c-logo__img {
+    width: $blocss-space * 3;
+    height: $blocss-space * 3;
+  }
+}

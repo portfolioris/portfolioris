@@ -1,0 +1,29 @@
+/*  =========================================================================
+    foundation.objects.tile
+    Creates an "elevated", boxed-off piece of content
+    ========================================================================= */
+
+/*  Variables
+    ========================================================================= */
+
+$o-tile--border-radius: $border-radius--primary !default;
+
+
+
+/*  Module
+    ========================================================================= */
+
+.o-tile {
+  display: block;
+  @include blocss-rem(border-radius, $o-tile--border-radius);
+}
+
+
+
+@include blocss-media-query(lap) {
+  .o-tile#{$blocss-responsive-modifier}lap {
+    display: block;
+    @include blocss-rem(border-radius, $o-tile--border-radius);
+  }
+}
+
