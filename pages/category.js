@@ -1,9 +1,9 @@
-import Layout from "../components/Layout/Layout.js";
+import Layout from "../components/organisms/Layout";
 import React, { Component } from "react";
 import Link from "next/link";
 import fetch from "isomorphic-unfetch";
 import Error from "next/error";
-import PageWrapper from "../components/PageWrapper.js";
+import PageWrapper from "../components/PageWrapper.jsx";
 import Menu from "../components/Menu.js";
 import { Config } from "../config.js";
 
